@@ -3,7 +3,7 @@ using namespace std;
 
 int countDivisors(int n) {
     int count = 0;
-    for (int i = 1; i * i <= n; i++) {
+    for (int i = 1; i * i <= n; i++) { // O(sqrt(n))
         if (n % i == 0) {
             int a = i;
             int b = n / i;
