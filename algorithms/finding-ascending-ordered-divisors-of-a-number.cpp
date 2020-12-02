@@ -4,7 +4,7 @@ using namespace std;
 
 void divisors(int n);
 
-int main()
+int main(void)
 {
     int n;
     cin >> n;
