@@ -1,6 +1,18 @@
 #include <iostream>
 using namespace std;
 
+int countDivisors(int n);
+
+int main(void)
+{
+    int num, total;
+    cin >> num;
+    total = countDivisors(num);
+    cout << "Total Divisors: " << total << endl;
+
+    return 0;
+}
+
 int countDivisors(int n) {
     int count = 0;
     for (int i = 1; i * i <= n; i++) { // O(sqrt(n))
@@ -16,14 +28,4 @@ int countDivisors(int n) {
         }
     }
     return count;
-}
-
-int main(void)
-{
-    int num, total;
-    cin >> num;
-    total = countDivisors(num);
-    cout << "Total Divisors: " << total << endl;
-
-    return 0;
 }
