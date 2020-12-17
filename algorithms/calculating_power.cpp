@@ -31,6 +31,7 @@ long long power(long long base, long long exp) //O(log(exp))
     }
 }
 
+
 /*
 
 7^9
