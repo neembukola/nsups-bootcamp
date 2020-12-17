@@ -169,12 +169,37 @@ No, It's not here.
 */
 ```
 
-### 
+### Set (Erase)
 
 ```cpp
+#include <iostream>
+#include <set>
+using namespace std;
 
+int main(void)
+{
+    set <int> st;
 
+    st.insert(82);
+    st.insert(50);
+    st.insert(62);
+    st.insert(68);
+    st.insert(82);
+    st.insert(95);
 
+    //erase
+    st.erase(62);
+
+    for(auto x: st) {
+        cout << x << " ";
+    }
+
+    return 0;
+}
+
+/*
+50 68 82 95
+*/
 ```
 
 ### 
