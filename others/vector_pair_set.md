@@ -169,35 +169,150 @@ No, It's not here.
 */
 ```
 
-### Set (Erase)
+### Set, Erase (all the same elements)
 
 ```cpp
+
 #include <iostream>
 #include <set>
+#include <iterator>
 using namespace std;
 
 int main(void)
 {
     set <int> st;
+    set <int> :: iterator it;
 
     st.insert(82);
     st.insert(50);
     st.insert(62);
     st.insert(68);
     st.insert(82);
+    st.insert(62);
     st.insert(95);
 
     //erase
-    st.erase(62);
+    st.erase(82);
 
-    for(auto x: st) {
-        cout << x << " ";
+    cout << "Erase all the same values." << endl;
+
+    for(it = st.begin(); it != st.end(); it++) {
+        cout << *it << " ";
     }
 
+    cout << endl;
     return 0;
 }
 
 /*
-50 68 82 95
+-- output --
+
+Erase all the same values.
+50 62 68 95
+
+-- note -- 
+
+set always follows the numbers sorted.
 */
+
+```
+
+### Multiset, Iterator, Erase (all the same elements)
+
+```cpp
+
+#include <iostream>
+#include <set>
+#include <iterator>
+using namespace std;
+
+int main(void)
+{
+    multiset <int> st;
+    multiset <int> :: iterator it;
+
+    st.insert(82);
+    st.insert(50);
+    st.insert(62);
+    st.insert(68);
+    st.insert(82);
+    st.insert(62);
+    st.insert(95);
+
+    //erase
+    st.erase(82);
+
+    cout << "Erase all the same values." << endl;
+
+    for(it = st.begin(); it != st.end(); it++) {
+        cout << *it << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
+
+/*
+-- output --
+
+Erase all the same values.
+50 62 62 68 95
+
+-- note -- 
+
+set always follows the numbers sorted.
+multiset will display all the elements (as given).
+if we erase an element, the single/multiple elements will be erased.
+*/
+
+```
+### Multiset, Erase (one element from multiple same elements)
+
+```cpp
+
+#include <iostream>
+#include <set>
+#include <iterator>
+using namespace std;
+
+int main(void)
+{
+    multiset <int> st;
+    multiset <int> :: iterator it;
+
+    st.insert(82);
+    st.insert(50);
+    st.insert(62);
+    st.insert(68);
+    st.insert(82);
+    st.insert(62);
+    st.insert(95);
+
+    //erase
+    st.erase(st.find(62)); //finding 62 and erasing the first 62.
+
+    cout << "Erase just one element from the same elements." << endl;
+
+    for(it = st.begin(); it != st.end(); it++) {
+        cout << *it << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
+
+/*
+-- output --
+
+Erase just one element from the same elements.
+50 62 68 82 82 95
+
+-- note -- 
+
+set always follows the numbers sorted.
+multiset will display all the elements (as given).
+if we erase an element, the single/multiple elements will be erased.
+but erase element by finding a element in multiset will erase just a one element.
+*/
+
 ```
