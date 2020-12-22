@@ -27,5 +27,5 @@ int countDivisors(int n) {
             }
         }
     }
-    return count;
+    return count; 
 }
