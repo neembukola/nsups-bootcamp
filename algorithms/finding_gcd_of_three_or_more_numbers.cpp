@@ -6,7 +6,7 @@ int gcd(int x, int y);
 int main(void)
 {
     int num;
-    cout << "enter array size: ";
+    cout << "enter array size: "; 
     cin >> num;
     int arr[num];
 
