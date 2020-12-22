@@ -15,7 +15,7 @@ int main(void)
     cout << result << endl;
 
     return 0;
-}
+} 
 
 int mod(int x, int y)
 {
