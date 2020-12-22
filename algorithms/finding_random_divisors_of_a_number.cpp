@@ -22,5 +22,5 @@ int main(void)
     cin >> num;
     divisors(num);
 
-    return 0;
+    return 0; 
 }
