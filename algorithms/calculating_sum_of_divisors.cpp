@@ -32,7 +32,7 @@ void divisors_sum()
     for(int i = 1; i<= MAXX; i++) {
         for(int j = i; j <= MAXX; j += i) {
             sum_of_divisors[j] += i;
-        }
+        } 
     }
 
     //O(n log(n))
