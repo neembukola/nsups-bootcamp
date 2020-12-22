@@ -134,7 +134,7 @@ int main(void)
 #include <set>
 using namespace std;
 
-int main(void)
+int main(void) 
 {
     set <int> st;
 
