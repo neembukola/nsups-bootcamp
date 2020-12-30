@@ -18,5 +18,5 @@ while (left <= right) {
 }
 
 
-//Search Number by Index
+//Find Index of A Number
 //Similar Problem: https://www.spoj.com/problems/BSEARCH1/
