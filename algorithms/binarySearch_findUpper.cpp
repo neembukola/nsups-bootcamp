@@ -1,6 +1,6 @@
 int qNum;
 cin >> qNum;
-
+ 
 int res = -1;
 int left = 0, right = num - 1;
 
