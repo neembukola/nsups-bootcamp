@@ -1,1 +1,0 @@
-- Standard Template Library (__C++__)
