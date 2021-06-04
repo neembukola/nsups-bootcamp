@@ -29,3 +29,20 @@ void divisors(int n) {
 }
 
 //Line 19: (i * i != n) [Personal Observation]
+
+
+/*
+void divisors(int n) {
+    for (int i = 1; i * i < n; i++) {
+        if (n % i == 0) {
+            cout << i << endl;
+        }
+    }
+    for (int i = sqrt(n); i >= 1; i--) {
+        if (n % i == 0) {
+            int div = n / i;
+            cout << div << endl;
+        }
+    }
+}
+*/
