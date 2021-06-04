@@ -10,7 +10,8 @@ int main() {
     return 0; 
 }
 
-//Algorithm
+//Algorithm: Divisors (Randomised)
+//Complexity: O(sqrt(n))
 
 void divisors(int n) {
     for (int i = 1; i * i <= n; i++) {
