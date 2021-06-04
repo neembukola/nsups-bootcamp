@@ -30,7 +30,6 @@ void divisors(int n) {
 
 //Line 19: (i * i != n) [Personal Observation]
 
-
 /*
 void divisors(int n) {
     for (int i = 1; i * i < n; i++) {
