@@ -10,12 +10,13 @@ int main() {
     int number;
     cout << "Enter an integer: ";
     cin >> number;
+    divisors_sum();
     cout << "Sum of Divisors: " << sum_of_divisors[number] << endl;
     return 0;
 }
 
 //Algorithm: Divisors Sum of A Number / SOD
-//Algorithm: O(sqrt(n))
+//Algorithm: O(NlogN)
 
 void divisors_sum() {
     for (int i = 1; i<= MAXX; i++) {
@@ -24,6 +25,7 @@ void divisors_sum() {
         } 
     }
 }
+
 
 /*
 Direct Solution
