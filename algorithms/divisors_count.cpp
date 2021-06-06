@@ -11,7 +11,7 @@ int main() {
     return 0;
 }
 
-//Algorithm: Divisors (Total/Count)
+//Algorithm: Divisors Count of A Number / NOD
 //Algorithm: O(sqrt(n))
 
 int countDivisors(int n) {
