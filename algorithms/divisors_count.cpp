@@ -4,9 +4,10 @@ using namespace std;
 int countDivisors(int n);
 
 int main() {
-    int n, total;
-    cin >> n;
-    total = countDivisors(n);
+    int num, total;
+    cout << "Enter a Number: ";
+    cin >> num;
+    total = countDivisors(num);
     cout << "Total Divisors: " << total << endl;
     return 0;
 }
