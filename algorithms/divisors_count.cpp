@@ -12,7 +12,7 @@ int main() {
 }
 
 //Algorithm: Divisors Count of A Number / NOD
-//Algorithm: O(sqrt(n))
+//Complexity: O(sqrt(n))
 
 int countDivisors(int n) {
     int count = 0;
