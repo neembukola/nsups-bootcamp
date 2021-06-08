@@ -3,61 +3,35 @@ using namespace std;
 
 int gcd(int x, int y);
 
-int main(void)
-{
+int main() {
     int num;
-    cout << "enter array size: "; 
+    cout << "How Many Numbers: "; 
     cin >> num;
     int arr[num];
-
+    cout << "Enter Numbers: "; 
     for (int i = 0; i < num; i++) {
-        cout << "Array " << i << " Index: ";
         cin >> arr[i];
     }
-
     int find_gcd = arr[0];
     for (int i = 1; i < num; i++) {
         find_gcd = gcd(find_gcd, arr[i]);
     }
-
-    cout << "desired gcd of " << num << " elements: " << find_gcd << endl;
-
+    cout << "Desired GCD of " << num << " the Elements is " << find_gcd << endl;
     return 0;
 }
 
-int gcd(int x, int y)
-{
+//Algorithm: Greatest Common Divisor
+//Complexity: O(log(min(a, b)) // USE THIS
+
+int gcd(int x, int y) {
     if (y == 0) {
         return x;
     }
-    return gcd(y, x % y);
+    return gcd(y, x % y); 
 }
 
 
-
-
 /*
-
-    //O(min(a, b))
-    int answer;
-    for(int i = 1; i <= max(a, b); i++) {
-        if(x % i == 0  &&  y % i == 0) {
-            answer = i;
-        }
-    }
-    return answer
-
-    ----- * ----
-
-    //O(max(a, b))
-    int answer;
-    for(int i = 1; i <= max(a, b); i++) {
-        if(x % i == 0  &&  y % i == 0) {
-            answer = i;
-        }
-    }
-    return answer
-
+Simple Solution for 3 Elements:
+gcd(a, b, c) = gcd(gcd(a, b), c)
 */
-
-// O(log(min(x, y))) - Most_Efficient
