@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int gcd(int x, int y);
+long long gcd(long long x, long long y);
 long long lcm(long long x, long long y);
 
 int main() {
@@ -15,7 +15,7 @@ int main() {
 
 // Algorithm: O(log(min(x, y))) - Most_Efficient
 
-int gcd(int x, int y) {
+long long gcd(long long x, long long y) {
     if (y == 0) {
         return x;
     }
