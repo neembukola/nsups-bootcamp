@@ -28,12 +28,26 @@ int gcd(int x, int y) {
 
 Complexity: O(min(x, y)) // DON'T USE THIS
 
-int GCD(int x, int y) { 
+int gcd(int x, int y) { 
     for(int i = min(x, y); i >= 1; i--) {
         if(x % i == 0 && y % i == 0) {
             return i;
         } 
     }
+}
+
+---- ** ----
+
+Complexity: O(max(x, y)) // DON'T USE THIS
+
+int gcd(int x, int y) {
+    int answer;
+    for(int i = 1; i <= max(x, y); i++) {
+        if(x % i == 0  &&  y % i == 0) {
+            answer = i;
+        }
+    }
+    return answer;
 }
 
 */
