@@ -17,5 +17,3 @@ int main() {
         cout << "Case " << i << ": " << time << endl;
     }
 }
-
-//https://lightoj.com/problem/lift
