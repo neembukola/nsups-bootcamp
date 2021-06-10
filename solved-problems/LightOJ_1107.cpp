@@ -21,5 +21,3 @@ int main() {
         }
     }
 }
-
-//https://lightoj.com/problem/how-cow
