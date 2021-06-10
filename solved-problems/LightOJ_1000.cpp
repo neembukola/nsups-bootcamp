@@ -10,5 +10,3 @@ int main() {
         cout << "Case " << i << ": " << a + b << endl;
     }
 }
-
-//https://lightoj.com/problem/greetings-from-lightoj
