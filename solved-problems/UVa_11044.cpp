@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-    int t, n, m;
-    cin >> t;
-    while (t--) {
+    int cases;
+    cin >> cases;
+    while (cases--) {
+        int n, m;
         cin >> n >> m;
-        int ans = (n / 3) * (m / 3);
-        cout << ans << endl;
-    } 
+        cout << (n / 3) * (m / 3) << endl;
+    }
 }
