@@ -20,20 +20,13 @@ long long power(long long base, long long exp) {
     if (exp == 0) {
         return 1;
     } 
+    if (exp == 1) {
+        return base;
+    }
     if (exp % 2 == 0) {
         long long half = power(base, exp / 2);
         return half * half;
     } else {
-        return power(base, exp - 1) * base;
+        return base * power(base, exp - 1);
     }
 }
-
-
-
-/*
-7^9
-7^8 7
-7^4 7^4 7
-7^2 7^2 7^4 7
-7^1 7^1 7^2 7^4 7
-*/
