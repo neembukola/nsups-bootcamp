@@ -1,1 +1,1 @@
-### NSU Problem Solvers (NSUPS) BootCamp (Season 10)
+### NSU Problem Solvers (NSUPS) BootCamp Season 10
